@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="air_challenge" type="move.py" name="air_move"  output="screen">
+    <remap from="air_move/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
+
