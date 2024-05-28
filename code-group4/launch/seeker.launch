@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch"/>
+  <include file="$(find turn_on_wheeltec_robot)/launch/wheeltec_lidar.launch"/>
+  <include file="$(find astra_camera)/launch/astrapro.launch"/>
+  <node pkg="air_challenge" type="seeker-group4.py" name="color_detection" output="screen">
+  </node>
+</launch>
