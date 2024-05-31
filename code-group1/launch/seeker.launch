@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="air_challenge" type="seeker.py" name="seeker" output="screen">
+    <remap from="seeker/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="air_challenge" type="avoider.launch" name="avoider" output="screen">
+    <remap from="avoider/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
