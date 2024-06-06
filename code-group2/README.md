@@ -12,7 +12,7 @@ In order to run the planning algorithm (used in the finals everything before tha
 (This is for a visualization of the planning algorithm, not necessary, do check if the robot is in it normal position and not falling into the ground.
 The last scenario indicates an issue with the robot and warrents a reboot of the system).
 
-follow path 4a for seeker, 4b for avoider
+follow path 4a for seeker, 4b for avoided:
 4a. roslaunch air_challenge_real detection.launch
 (If the camera works this should display a camera feed, otherwise go back to step 2)
 
@@ -22,7 +22,7 @@ follow path 4a for seeker, 4b for avoider
 4b. roslaunch air_challenge_real detection_away.launch
 (If the camera works this should display a camera feed, otherwise go back to step 2)
 
-5a. roslaunch air_challenge_real rrt_away.launch
+5b. roslaunch air_challenge_real rrt_away.launch
 (this launches the program, which will start driving in approx 30 seconds from hitting enter).
 
 # Reactive algorithm
