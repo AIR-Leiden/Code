@@ -33,6 +33,9 @@ For the reactive algorithm:
 1. `roslaunch turn_on_wheeltec_robot wheeltec_lidar.launch`
 2. `roslaunch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch`
 3. `roslaunch turn_on_wheeltec_robot wheeltec_camera.launch camera_mode:=Astra_Pro+RgbCam`
+   
+For the hider please follow step 5, and for the seeker please follow step 4: 
+
 4. `roslaunch air_challenge_real get_him.launch` (for the seeker, please run through RealVNC on the terminal of the robot)
 5. `roslaunch air_challenge_real run_away.launch` (for the hider, please run through RealVNC on the terminal of the robot)
 
