@@ -2,10 +2,10 @@ In order to run the planning algorithm (used in the finals everything before tha
 # Planning
 0. Ensure that the needed files in planning scripts and launch are added to the air_challenge_real/launch and the air_challenge_real/Scripts folder and that the parameters are added in the turn_on_wheeltec_robot and navigation params folder.
 
-1. '<roslaunch turn_on_wheeltec_robot rrt_slam.launch>' 
+1. `<roslaunch turn_on_wheeltec_robot rrt_slam.launch>`
 (This step is needed to launch the needed nodes for slam, the unneeded ones get automatically killed later on)
 
-2. '<roslaunch turn_on_wheeltec_robot wheeltec_camera.launch camera_mode:=Astra_Pro+RgbCam>'
+2. `<roslaunch turn_on_wheeltec_robot wheeltec_camera.launch camera_mode:=Astra_Pro+RgbCam>`
 (This step turns on the camera, please check that there aren't any error in red)
 
 3. roslaunch air_challenge_real rviz.launch (through realVNC viewer)
