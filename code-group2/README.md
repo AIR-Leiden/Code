@@ -1,4 +1,4 @@
-In order to run the planning algorithm (used in the finals, everything before that was the reactive code, both of these have only been tested on the red robot in the new Gorlaeus robot lab, due to time constraints but could be easily fixed):
+In order to run the planning algorithm (used in the finals, everything before that was the reactive code but they work both, both of these have only been tested on the red robot in the new Gorlaeus robot lab, due to time constraints but could be easily fixed):
 # Planning
 0. Ensure that the needed files in planning scripts and launch are added to the air_challenge_real/launch and the air_challenge_real/Scripts folder and that the parameters are added in the turn_on_wheeltec_robot and navigation params folder.
 
