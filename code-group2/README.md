@@ -2,25 +2,27 @@ In order to run the planning algorithm (used in the finals everything before tha
 # Planning
 0. Ensure that the needed files in planning scripts and launch are added to the air_challenge_real/launch and the air_challenge_real/Scripts folder and that the parameters are added in the turn_on_wheeltec_robot and navigation params folder.
 
-1. roslaunch turn_on_wheeltec_robot rrt_slam.launch 
+1. '<roslaunch turn_on_wheeltec_robot rrt_slam.launch>' 
 (This step is needed to launch the needed nodes for slam, the unneeded ones get automatically killed later on)
 
-2. roslaunch turn_on_wheeltec_robot wheeltec_camera.launch camera_mode:=Astra_Pro+RgbCam
+2. '<roslaunch turn_on_wheeltec_robot wheeltec_camera.launch camera_mode:=Astra_Pro+RgbCam>'
 (This step turns on the camera, please check that there aren't any error in red)
 
 3. roslaunch air_challenge_real rviz.launch (through realVNC viewer)
 (This is for a visualization of the planning algorithm, not necessary, do check if the robot is in it normal position and not falling into the ground.
 The last scenario indicates an issue with the robot and warrents a reboot of the system).
 
-follow path 4a for seeker, 4b for avoided:
+follow path 'a' for seeker, 'b' for avoided:
+4. Detection 
 4a. roslaunch air_challenge_real detection.launch
 (If the camera works this should display a camera feed, otherwise go back to step 2)
 
-5a. roslaunch air_challenge_real rrt.launch
-(this launches the program, which will start driving in approx 30 seconds from hitting enter).
-
 4b. roslaunch air_challenge_real detection_away.launch
 (If the camera works this should display a camera feed, otherwise go back to step 2)
+
+5. Launching the planning algorithm
+5a. roslaunch air_challenge_real rrt.launch
+(this launches the program, which will start driving in approx 30 seconds from hitting enter).
 
 5b. roslaunch air_challenge_real rrt_away.launch
 (this launches the program, which will start driving in approx 30 seconds from hitting enter).
