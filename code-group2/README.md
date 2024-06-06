@@ -40,5 +40,6 @@ For the hider please follow step 5, and for the seeker please follow step 4:
 5. `roslaunch air_challenge_real run_away.launch` (for the hider, please run through RealVNC on the terminal of the robot)
 
 # General remarks
-if the air_challenge_real package does not exist yet, please use copy the folder from the scripts folder into the correct folder in the robot.
-Also, add the correct contents (only the files from the repository into the launch and script folder).
+1. if the air_challenge_real package does not exist yet, please use copy the folder from the scripts folder into the correct folder in the robot.
+   Also, add the correct contents (only the files from the repository into the launch and script folder).
+2. Once the  `roslaunch turn_on_wheeltec_robot rrt_slam.launch` is launched please do not step into the arena, as the robot might think you are an object, this can be checked in rviz. If the robot does detect       you as an object even if you are not in the arena anymore just relaunch the node.
