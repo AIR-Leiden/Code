@@ -13,16 +13,15 @@ In order to run the planning algorithm (used in the finals everything before tha
 The last scenario indicates an issue with the robot and warrents a reboot of the system).
 
 follow path 'a' for seeker, 'b' for avoided:
-4. Detection 
+
 4a. roslaunch air_challenge_real detection.launch
 (If the camera works this should display a camera feed, otherwise go back to step 2)
 
-4b. roslaunch air_challenge_real detection_away.launch
-(If the camera works this should display a camera feed, otherwise go back to step 2)
-
-5. Launching the planning algorithm
 5a. roslaunch air_challenge_real rrt.launch
 (this launches the program, which will start driving in approx 30 seconds from hitting enter).
+
+4b. roslaunch air_challenge_real detection_away.launch
+(If the camera works this should display a camera feed, otherwise go back to step 2)
 
 5b. roslaunch air_challenge_real rrt_away.launch
 (this launches the program, which will start driving in approx 30 seconds from hitting enter).
