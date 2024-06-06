@@ -15,7 +15,7 @@ The last scenario indicates an issue with the robot and warrents a reboot of the
 Follow path 'a' for seeker, 'b' for avoided:
 
 4a. `roslaunch air_challenge_real detection.launch`
-(If the camera works this should display a camera feed, otherwise go back to step 2)
+(If the camera works this should display a camera feed, through RealVNC viewer, otherwise go back to step 2)
 
 5a. `roslaunch air_challenge_real rrt.launch`
 (this launches the program, which will start driving in approx 30 seconds from hitting enter).
@@ -28,6 +28,7 @@ Follow path 'a' for seeker, 'b' for avoided:
 
 # Reactive algorithm
 For the reactive algorithm:
+
 0. Ensure that the needed files in the reactive folder are added to the air_challenge_real folder.
 1. `roslaunch turn_on_wheeltec_robot wheeltec_lidar.launch`
 2. `roslaunch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch`
